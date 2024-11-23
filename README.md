@@ -7,7 +7,7 @@ Este es un bloque de codigo para cargar una capa tipo poligono en forma de roi.
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 var roi = ee.FeatureCollection('projects/mtb2023-399203/assets/Palo_verde');
 Map.addLayer(roi, {color: 'green'}, 'ROI');
 Map.centerObject(roi, 12)
@@ -20,7 +20,7 @@ Este es un bloque de codigo para cargar la colección de imagenes en este caso d
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 //Coleccion de imagenes de Sentinel-1
 var s1 = ee.ImageCollection('COPERNICUS/S1_GRD')
         //.filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV','VH'))
@@ -36,7 +36,7 @@ En este caso ambos conjunto de codigos son para filtrar imagenes por fecha, y te
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 // Filtro de imagenes por fecha
 var beforeinc = s1.filterDate('2023-04-01', '2023-04-28')
 print(beforeinc,'imagenes disponibles antes del incendio')
@@ -55,7 +55,7 @@ Aqui en este bloque lo que se esta haciendo es pasando toda la colección de ima
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 // pasemos de un ImageCollection a un Image
 var beforeinc = beforeinc.mosaic().clip(roi) //puedes cambiar mosaic por mean or median
 var afterinc =  afterinc.mosaic().clip(roi)
@@ -72,7 +72,7 @@ En este bloque lo que hacemos es corregir el ruido que hay en las imagenes SAR.
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 //filtro para reducir el speckle (pixeles de colores aleatorios)
 var SMOOTHING_RADIUS = 50;
 var beforeinc = beforeinc.focal_mean(SMOOTHING_RADIUS, 'circle', 'meters');
@@ -86,7 +86,7 @@ En este otro bloque se colocan unos parametros para poder vizualizar las imagene
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 //Parametros de visualizacion
 var visualization = {
   bands: ['VH'],  // podemos ajustar la banda a VV
@@ -102,7 +102,7 @@ Aqui vizualizamos en el mapa las imagenes con las correciones y demás que hemos
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 //DVisualicemos las imagenes
 Map.addLayer( beforeinc,visualization, 'antes del incendio',0);
 Map.addLayer(afterinc, visualization, 'despues del incendio',0);
@@ -115,7 +115,7 @@ En este bloque se combinan las bandas que contengan las dos imagenes que tenemos
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 //Unamos las bandas del antes y despues en un solo image
 var coll = beforeinc.addBands(afterinc)
 print(coll, 'coleccion junta')
@@ -130,7 +130,7 @@ Aqui lo que se hace es seleccionar dos bandas de las imagenes y se calcula una n
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 var change = coll.expression ('VH / VH_1', {
     'VH': coll.select ('VH'),  // ajuste las bandas como considere
     'VH_1': coll.select ('VH_1')})
@@ -147,7 +147,7 @@ Aqui empezamos a trabajar con Sentinel-2, por lo que primero hacemos el emascara
 <details>
   <summary>Clic</summary>
   
-  ```js
+  ```javascript
 // Sentinel-2 cloud masking
 function cloudMask(image){
   var scl = image.select('SCL');
