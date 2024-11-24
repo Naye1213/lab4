@@ -371,11 +371,14 @@ Esta imagen demuestra el resultado del Sentinel-1 combinado del incendio.
 ![Esta imagen demuestra el resultado del Sentinel-2 combinado del incendio.](https://github.com/Naye1213/lab4/blob/6f9fdc09a0cc25237e1b9b72bc8cd5d88d0b2897/Juntas.%20S2.png)
 
 Esta imagen demuestra el resultado del Sentinel-2 combinado del incendio.
- 
+
+Estas dos imágenes que es una de Sentinel-1 y otra de Sentinel-2, son imágenes de las bandas combinadas de las de antes del incendio y de las de después del incendio. En la de Sentinel-1 se aprecian la zona quemada de un tono morado, mientras que las zonas no quemadas de un gris claro, pero existe una zona en un gris más oscuro la cual puede tratar de una zona que se vio menos afectada por el incendio, pero que aun así si le afecto un poco. En la de Sentinel-2 se observan las diferentes áreas afectadas por medio de una clasificación de colores, siendo el morado las zonas más afectadas y el verde las zonas no afectadas, entonces por medio de esta clasificación de Sentinel-2 podemos clasificar mejor las zonas que tuvieron un alto impacto por el incendio. 
 
 ## Conclusiones
 
+Todas estas imágenes demuestran las diferencias que tiene una visualización de Sentinel-1 con el Sentinel-2, ya que las diferencias van desde la forma en la que se obtienen los datos hasta la manera de poder observarlos, ya que en el Sentinel-2 se pueden identificar más sencillamente las diferentes categorías de quemado de la vegetación. Algo que si me queda duda es si se puede hacer esta clasificación de colores de la imagen de Sentinel-2 en las imágenes de Sentinel-1, ya que no trate de hacerlo, pero mi suposición que no sé si es correcta, es que esta clasificación de colores no podría ser aplicada tan bien como se ve en las imágenes de Sentinel-2 en las imágenes de Sentinel-1, ya que en las imágenes de Sentinel-1 se aprecian menos tonos de grises, por lo que no hay tantas variación, solo se aprecia una distinción entre un área y otra.
 
+Por lo tanto, para mi gusto en el caso de incendios preferiría usar Sentinel-2, en cual puedo contar con mayores categorías para subdividir las zonas quemadas, para tener una referencia de cual zona o cuales zonas tienen mayor prioridad para su manejo adecuado de restauración y cuidado. Así mismo, el Sentinel-1 lo preferiría para casos de tormentas, inundaciones o lugares con mucha nubosidad, ya que gracias a que contiene SAR, las nubes y lluvia no le afectan para la captación de imágenes y datos relevantes para dichos estudios.
 
 ## Referencias
 
