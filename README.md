@@ -331,6 +331,16 @@ Map.addLayer(dNBR.sldStyle(sld_intervals), {}, 'dNBR classified');
 
 ### Analisis de resultados de indendios de Sentinel-1 y Sentinel-2
 
+Enlace de código de incendios de Sentinel-1 y de Sentinel-2: 
+https://code.earthengine.google.com/e8baf14ecdeed9da6ab7cf49c3e7cc1d 
+
+
+![Esta imagen demuestra el resultado del Sentinel-1 antes del incendio.](https://github.com/Naye1213/lab4/blob/7f14cd651060b0b96adcfb18ee20cdc49ff5a369/Antes.png)
+ Esta imagen demuestra el resultado del Sentinel-1 antes del incendio.
+
+
+![Esta imagen demuestra el resultado del Sentinel-1 despues del incendio.](https://github.com/Naye1213/lab4/blob/7f14cd651060b0b96adcfb18ee20cdc49ff5a369/Antes.png)
+ Esta imagen demuestra el resultado del Sentinel-1 despues del incendio.
 
 
 ## Conclusiones
