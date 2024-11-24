@@ -346,7 +346,7 @@ https://code.earthengine.google.com/e8baf14ecdeed9da6ab7cf49c3e7cc1d
 Aquí se pueden observar como en las imágenes de Sentinel-1 las partes quemadas se ven más oscuras, mientras que las zonas que no están quemadas mantienen su tono de gris siendo más claro. 
 
 
-![Esta imagen demuestra el resultado del Sentinel-2 antes del incendio.](https://github.com/Naye1213/lab4/blob/99e6711c91709566654e69bf6380e843c00e69d7/Antes.%20S1.png)
+![Esta imagen demuestra el resultado del Sentinel-2 antes del incendio.](https://github.com/Naye1213/lab4/blob/119cf3957b32a204d4dec432f0c13f8b72415003/Antes.%20S2.png)
  Esta imagen demuestra el resultado del Sentinel-2 antes del incendio.
 
 
