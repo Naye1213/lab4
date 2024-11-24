@@ -350,7 +350,7 @@ Aquí se pueden observar como en las imágenes de Sentinel-1 las partes quemadas
  Esta imagen demuestra el resultado del Sentinel-2 antes del incendio.
 
 
-![Esta imagen demuestra el resultado del Sentinel-2 despues del incendio.](https://github.com/Naye1213/lab4/blob/b36d400c7d42a304da9f225a5a060cb0c91b3510/Despues.%20S1.png)
+![Esta imagen demuestra el resultado del Sentinel-2 despues del incendio.](https://github.com/Naye1213/lab4/blob/3fed7156c8bfb6c21152585a61fe8eb029a239d0/Despues.%20S2.png)
  Esta imagen demuestra el resultado del Sentinel-2 despues del incendio.
 
 
