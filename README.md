@@ -3,7 +3,21 @@
 
 ## Introducción
 
-En este laboratorio lo que se busca es observar la comparación de Sentinel-1 con Sentinel-2 para observar incendios y hacer sus respectivos analisis.
+En este laboratorio lo que se busca es observar la comparación de Sentinel-1 con Sentinel-2 para observar incendios y hacer sus respectivos análisis. Por lo que se va a trabajar con SAR en Sentinel-1 y otro con otro tipo de bandas que igualmente sirven para trabajar incendios con Sentinel-2, tal como se vio previamente en otro laboratorio en el cual se trabajó incendios y se utilizó el índice de vegetación NBR.
+
+SAR es un tipo de radar, el cual ayuda a obtener imágenes de alta resolución a larga distancia. Este registra el tiempo que tarda un pulso en volver, su intensidad y fase de la microonda, esas señales de fase producen un interferograma entre dos captaciones de datos de SAR. (ESA, sf) Por lo que mejor dicho este radar envía pulsos electromagnéticos a la tierra para grabar su retorno y luego reflejarse, sin necesidad de fuentes de iluminación, por lo que como característica tiene que operar bien tanto de día como de noche, y con nubes y con lluvia. (Guimeno, 2019) Estas imágenes que genera el SAR suelen ser útiles para estudiar características del hielo y la nieve, cambios y medir flujos de hielo con la correlación de imágenes o “Speckle Tracking”. (ESA, sf)
+
+Entonces lo que como tal devuelve una imagen SAR es un mapa con áreas iluminadas, que serían los objetos que devuelven más señal al radar, esto como puntos en las imágenes y en el caso de las que devuelven menos señal están las superficies más lisas o planas que son zonas más oscuras en la imagen. (Guimeno, 2019) Como ejemplo de algunas aplicaciones que se les puede dar a las imágenes SAR esta como la cartografía de la deforestación, seguimiento de la actividad marítima e identificación de zonas inundadas. (Menezes, sf)
+
+## Marco Teórico
+
+Sentinel-1: es un satélite con instrumentos de antenas de radar que ayuda a estudiar tanto la superficie terrestre como la oceánica y gracias a los datos radar este satélite no se ve afectado por el día o por la noche, por lo que tiene una monitorización constante. (Copernicus, 2017)
+
+Sentinel-2: es un satélite con instrumento Multi Spectral Intrument el cual toma datos de alta resolución espacial para monitorizar la superficie terrestre. Además, cuenta con 13 bandas con diferentes resoluciones espectrales. (Copernicus, 2017)
+
+NBR: es un índice de vegetación que se usa para calcular o identificar áreas calcinadas, por lo tanto, la vegetación saludable tiene alta reflectancia en el NIR, y el área quemada alta reflectancia en el SWIR. Este índice se suele utilizar para estudiar incendios. (Alonso, sf)
+
+Github: es una plataforma que puede almacenar códigos, compartir y trabajar junto con otras personas el código. (Github, sf)
 
 ## Desarrollo
 
@@ -297,6 +311,14 @@ Map.addLayer(dNBR.sldStyle(sld_intervals), {}, 'dNBR classified');
 ```
 </details>
 
+## Referencias
+
+ESA. (s.f) “Radar de apertura sintética (SAR)” Recuperado de: https://www.esa.int/SPECIALS/Eduspace_Global_ES/SEMVKXF64RH_0.html 
+Guimeno, N. (2019) “¿Qué es un SAR?” Recuperado de: https://www.inta.es/INTA/es/blogs/ceit/BlogEntry_1554121012176 
+Menezes, E. (sf) “Explorar imágenes satelitales SAR” Recuperado de: https://learn.arcgis.com/es/projects/explore-sar-satellite-imagery/ 
+Copernicus (2017) “Sentinel-1, -2 y -3” Recuperado de: https://www.inta.es/INTA/gl/blogs/copernicus/BlogEntry_1507278650016 
+Alonso. (s.f) “Los 6 Índices de Vegetación para completar el NDVI” Recuperado de: https://mappinggis.com/2020/07/los-6-indices-de-vegetacion-para-completar-el-ndvi/ 
+Github. (s.f) “Acerca de GitHub y Git” Recuperado de: https://docs.github.com/es/get-started/start-your-journey/about-github-and-git 
 
 
 
