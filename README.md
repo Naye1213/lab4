@@ -339,7 +339,7 @@ https://code.earthengine.google.com/e8baf14ecdeed9da6ab7cf49c3e7cc1d
  Esta imagen demuestra el resultado del Sentinel-1 antes del incendio.
 
 
-![Esta imagen demuestra el resultado del Sentinel-1 despues del incendio.](https://github.com/Naye1213/lab4/blob/7f14cd651060b0b96adcfb18ee20cdc49ff5a369/Antes.png)
+![Esta imagen demuestra el resultado del Sentinel-1 despues del incendio.](https://github.com/Naye1213/lab4/blob/b36d400c7d42a304da9f225a5a060cb0c91b3510/Despues.%20S1.png)
  Esta imagen demuestra el resultado del Sentinel-1 despues del incendio.
 
 
