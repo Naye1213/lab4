@@ -29,7 +29,7 @@ https://code.earthengine.google.com/ccf23585a08601b9e93c2cd7136bc769
  Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.
 
 
-![Esta imagen es después de la inundación.](https://github.com/Naye1213/lab4/blob/7f14cd651060b0b96adcfb18ee20cdc49ff5a369/Antes.png)
+![Esta imagen es después de la inundación.](https://github.com/Naye1213/lab4/blob/e705bab55c0d905edaccc4b12945fec97297aacc/Despues.png)
 Esta imagen es después de la inundación.
 
 En estas dos imágenes se puede detectar leves cambios en toda la parte izquierda, la cual se ve más plana, mostrando a su vez más reflectancia y dando a entender que ahí hubo un cambio en cierto momento por lo que se podría decir que probablemente el lugar sufrió alguna afección de inundación afectando gran parte del espacio en estudio para este caso. Por el contrario, la parte derecha, que muestra zonas altas con mucha rugosidad, no se notan cambio alguno, por lo que se puede decir que esta parte no tuve afecciones de inundación, por lo que se mantuvo prácticamente igual.
