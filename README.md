@@ -1,6 +1,10 @@
 # Laboratorio 4 SAR
 # Nayely Araya Valerin C10561
 
+## Introducción
+
+En este laboratorio lo que se busca es observar la comparación de Sentinel-1 con Sentinel-2 para observar incendios y hacer sus respectivos analisis.
+
 ## Desarrollo
 
 Este es un bloque de codigo para cargar una capa tipo poligono en forma de roi.
