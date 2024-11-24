@@ -9,6 +9,8 @@ SAR es un tipo de radar, el cual ayuda a obtener imágenes de alta resolución a
 
 Entonces lo que como tal devuelve una imagen SAR es un mapa con áreas iluminadas, que serían los objetos que devuelven más señal al radar, esto como puntos en las imágenes y en el caso de las que devuelven menos señal están las superficies más lisas o planas que son zonas más oscuras en la imagen. (Guimeno, 2019) Como ejemplo de algunas aplicaciones que se les puede dar a las imágenes SAR esta como la cartografía de la deforestación, seguimiento de la actividad marítima e identificación de zonas inundadas. (Menezes, sf)
 
+En SAR existen ciertos mecanismos de retrodispersión, siendo la retrodispersión la cantidad de energía recibida en un área. Existe la retrodispersión de superficies lisas, la cual la mayor parte de la energía incidente es reflejada en una dirección opuesta a la del radar, por lo que estas áreas pueden aparecer oscuras. Esta también las superficies ásperas está dispersa la energía de forma igual prácticamente a todas direcciones y solo una pequeña parte puede llegar al radar. De igual forma otro mecanismo de retrodispersión sería el de doble rebote, el cual consiste en dos superficies que forman ángulos rectos en dirección al radar por lo que la energía rebota dos veces reflejando prácticamente toda la energía de regreso al radar. Por último, también existe el de dispersión por volumen, el cual consiste en múltiples rebotes y reflexiones de diferentes componentes, se puede dar en la nieve o en la vegetación. (Villegas, 2019)
+
 ## Marco Teórico
 
 **Sentinel-1:** es un satélite con instrumentos de antenas de radar que ayuda a estudiar tanto la superficie terrestre como la oceánica y gracias a los datos radar este satélite no se ve afectado por el día o por la noche, por lo que tiene una monitorización constante. (Copernicus, 2017)
@@ -37,7 +39,7 @@ Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.
 
 Esta imagen es después de la inundación.
 
-En estas dos imágenes se puede detectar leves cambios en toda la parte izquierda, la cual se ve más plana, mostrando a su vez menor retrodispercion y dando a entender que ahí hubo un cambio en cierto momento por lo que se podría decir que probablemente el lugar sufrió alguna afección de inundación afectando gran parte del espacio en estudio para este caso. Por el contrario, la parte derecha, que muestra zonas altas con mucha rugosidad, no se notan cambio alguno, por lo que se puede decir que esta parte no tuve afecciones de inundación, por lo que se mantuvo prácticamente igual.
+En estas dos imágenes se puede detectar leves cambios en toda la parte izquierda, la cual se ve más plana, mostrando a su vez menor retrodispercion, ya que es una zona más lisa por el agua y retrodispersandose de manera contraria a la del radar y dando a entender que ahí hubo un cambio en cierto momento por lo que se podría decir que probablemente el lugar sufrió alguna afección de inundación afectando gran parte del espacio en estudio para este caso. Por el contrario, la parte derecha, que muestra zonas altas con mucha rugosidad, no se notan cambio alguno, por lo que se puede decir que esta parte no tuve afecciones de inundación, por lo que se mantuvo prácticamente igual.
 
 ### Explicación de parte por parte que hace cada bloque de codigo en el codigo de incendios para Sentinel-1 y Sentinel-2.
 
@@ -394,7 +396,7 @@ Alonso. (s.f) “Los 6 Índices de Vegetación para completar el NDVI” Recuper
 
 Github. (s.f) “Acerca de GitHub y Git” Recuperado de: https://docs.github.com/es/get-started/start-your-journey/about-github-and-git 
 
-
+Villegas, P. (2019) “Mecanismos de retrodispersión de las imágenes de radar de apertura sintética SAR” Recuperado de: https://aguaysig.com/mecanismos-de-retrodispersion-de-las-imagenes-sar/ 
 
 
 
