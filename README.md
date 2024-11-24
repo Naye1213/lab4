@@ -361,7 +361,7 @@ Aquí se observan las imágenes de antes y después del incendio, pero de Sentin
 Esta imagen demuestra el resultado del Sentinel-1 combinado del incendio.
 
 
-![Esta imagen demuestra el resultado del Sentinel-2 combinado del incendio.](https://github.com/Naye1213/lab4/blob/3fed7156c8bfb6c21152585a61fe8eb029a239d0/Despues.%20S2.png)
+![Esta imagen demuestra el resultado del Sentinel-2 combinado del incendio.](https://github.com/Naye1213/lab4/blob/6f9fdc09a0cc25237e1b9b72bc8cd5d88d0b2897/Juntas.%20S2.png)
 Esta imagen demuestra el resultado del Sentinel-2 combinado del incendio.
  
 
