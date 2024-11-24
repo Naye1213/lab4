@@ -15,11 +15,13 @@ Entonces lo que como tal devuelve una imagen SAR es un mapa con áreas iluminada
 
 **Sentinel-2:** es un satélite con instrumento Multi Spectral Intrument el cual toma datos de alta resolución espacial para monitorizar la superficie terrestre. Además, cuenta con 13 bandas con diferentes resoluciones espectrales. (Copernicus, 2017)
 
-NBR: es un índice de vegetación que se usa para calcular o identificar áreas calcinadas, por lo tanto, la vegetación saludable tiene alta reflectancia en el NIR, y el área quemada alta reflectancia en el SWIR. Este índice se suele utilizar para estudiar incendios. (Alonso, sf)
+**NBR:** es un índice de vegetación que se usa para calcular o identificar áreas calcinadas, por lo tanto, la vegetación saludable tiene alta reflectancia en el NIR, y el área quemada alta reflectancia en el SWIR. Este índice se suele utilizar para estudiar incendios. (Alonso, sf)
 
-Github: es una plataforma que puede almacenar códigos, compartir y trabajar junto con otras personas el código. (Github, sf)
+**Github:** es una plataforma que puede almacenar códigos, compartir y trabajar junto con otras personas el código. (Github, sf)
 
 ## Desarrollo
+
+### Analisis de imagenes de inundación con Sentinel-1
 
 Enlace de código de inundaciones Sentinel-1: 
 https://code.earthengine.google.com/ccf23585a08601b9e93c2cd7136bc769 
@@ -35,6 +37,7 @@ Esta imagen es después de la inundación.
 
 En estas dos imágenes se puede detectar leves cambios en toda la parte izquierda, la cual se ve más plana, mostrando a su vez más reflectancia y dando a entender que ahí hubo un cambio en cierto momento por lo que se podría decir que probablemente el lugar sufrió alguna afección de inundación afectando gran parte del espacio en estudio para este caso. Por el contrario, la parte derecha, que muestra zonas altas con mucha rugosidad, no se notan cambio alguno, por lo que se puede decir que esta parte no tuve afecciones de inundación, por lo que se mantuvo prácticamente igual.
 
+### Explicación de parte por parte que hace cada bloque de codigo en el codigo de incendios para Sentinel-1 y Sentinel-2.
 
 Este es un bloque de codigo para cargar una capa tipo poligono en forma de roi.
     
