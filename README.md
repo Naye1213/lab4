@@ -1,17 +1,9 @@
-# Laboratorio 4
+# Laboratorio 4 SAR
+# Nayely Araya Valerin C10561
 
 ## Desarrollo
 
 Este es un bloque de codigo para cargar una capa tipo poligono en forma de roi.
-JavaScript:
-  type: programming
-  tm_scope: source.js
-  ace_mode: javascript
-  codemirror_mode: javascript
-  codemirror_mime_type: text/javascript
-  color: "#f1e05a"
-  aliases:
-  - js
     
 <details>
   <summary>Clic</summary>
@@ -163,6 +155,141 @@ function cloudMask(image){
   var mask = scl.eq(3).or(scl.gte(7).and(scl.lte(10)));
   return image.updateMask(mask.eq(0));
 }
+```
+</details>
+
+
+En esta parte lo que se hizo fue cargar la coleccion de imagenes de Sentinel-2.
+
+<details>
+  <summary>Clic</summary>
+  
+``` js
+var s2 = ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED").filterBounds(roi) //s2 fue el nombre que le coloque a la coleccion que filtre.
+  .filterDate('2023-01-01', '2023-12-31') //Defina el rango de fechas.
+  .filterBounds(roi) // filtro de area.
+  .map(cloudMask) // aca ejecutamos el enmascador de nubes que programamos antes. 
+  print(s2) 
+```
+</details>
+
+
+En estos dos bloques lo que se hizo fue filtrar imagenes de una fecha antes del incendio y otras imagenes con fecha posterior al incendio.
+
+<details>
+  <summary>Clic</summary>
+  
+``` js
+// Filtros de la coleccion ANTES del incendio
+var antes = s2.filter(ee.Filter.or(
+ ee.Filter.date('2023-04-01', '2023-04-28')))
+print(antes, 'antes del incendio s2');
+
+// Filtros de la coleccion DESPUES del incendio
+var despues = s2.filter(ee.Filter.or(
+ ee.Filter.date('2023-05-10', '2023-06-01')))
+print( despues, 'despues del incendio s2');
+```
+</details>
+
+
+Lo que hace esta parte del codigo es que por medio de las imagenes que tenemos antes y las de despues se creea un nuevo conjunto de estas imagenes, pero mejoradas con la expresición mosaic.
+
+<details>
+  <summary>Clic</summary>
+  
+``` js
+var antes2 = antes.mosaic().clip(roi) //puedes cambiar mosaic por mean or median
+var despues2 =  despues.mosaic().clip(roi)
+print(antes, 'imagen antes del incendio')
+print(despues, 'imagen despues del incendio')
+
+Map.addLayer( antes2,{bands: ['B4', 'B3', 'B2'], min: 354.3920564417735, max: 1282.2158558183125, gamma: 1.2}, 'antes del incendio s2', 0);
+```
+</details>
+
+
+Aqui lo que se hace es calcular el NBR el cual es un indice de vegetación, que es utilizado para casos de incendios, este a su vez se calcula con las bandas B8 y B12, siendo la B8 el infrarrojo cercano y la B12 el infrarrojo de onda corta. Lo que se busca con esto es ver la humedad de la vegetación y asi detectar cuales son las areas quemadas, por su falta de agua.
+
+<details>
+  <summary>Clic</summary>
+  
+``` js
+var preNBR = antes2.normalizedDifference(['B8', 'B12']).rename('nbr');
+var postNBR = despues2.normalizedDifference(['B8', 'B12']).rename('nbr');
+print(preNBR)
+```
+</details>
+
+
+Estos bloques son solamente para vizualisar el NBR de las imagenes.
+
+<details>
+  <summary>Clic</summary>
+  
+``` js
+Map.addLayer(preNBR, 
+{bands: ['nbr'], min: 0.018902123252200934, max:0.7007203002942072 , gamma: 1.2}, 'nbr antes'); 
+//Visualizacion
+Map.addLayer(postNBR, 
+{bands: ['nbr'], min: 0.018902123252200934, max:0.7007203002942072 , gamma: 1.2}, 'nbr despues'); 
+```
+</details>
+
+
+En estos bloques lo que se busca calcular es la diferencia que hay entre antes del incendio y despues, para ver las variaciones que existen en la vegetación.
+
+<details>
+  <summary>Clic</summary>
+  
+``` js
+// The result is called delta NBR or dNBR
+var dNBR_unscaled = preNBR.subtract(postNBR);
+
+// Scale product to USGS standards
+var dNBR = dNBR_unscaled.multiply(1000);
+
+// Add the difference image to the console on the right
+print("Difference Normalized Burn Ratio: ", dNBR);
+```
+</details>
+
+
+Con estas dos lineas podemos vizualisar en el mapa los resultados en una escala de grises.
+
+<details>
+  <summary>Clic</summary>
+  
+``` js
+var grey = ['white', 'black'];
+
+Map.addLayer(dNBR, {min: -1000, max: 1000, palette: grey}, 'dNBR greyscale');
+```
+</details>
+
+
+Estas partes lo que hacen es clasificar los resultados por colores que van desde lo más quemado a lo que no se quemo, posteriormente solo se vizualisa en el mapa los resultados de esto.
+
+<details>
+  <summary>Clic</summary>
+  
+``` js
+var sld_intervals =
+  '<RasterSymbolizer>' +
+    '<ColorMap type="intervals" extended="false" >' +
+      '<ColorMapEntry color="#ffffff" quantity="-500" label="-500"/>' +
+      '<ColorMapEntry color="#7a8737" quantity="-250" label="-250" />' +
+      '<ColorMapEntry color="#acbe4d" quantity="-100" label="-100" />' +
+      '<ColorMapEntry color="#0ae042" quantity="100" label="100" />' +
+      '<ColorMapEntry color="#fff70b" quantity="270" label="270" />' +
+      '<ColorMapEntry color="#ffaf38" quantity="440" label="440" />' +
+      '<ColorMapEntry color="#ff641b" quantity="660" label="660" />' +
+      '<ColorMapEntry color="#a41fd6" quantity="2000" label="2000" />' +
+    '</ColorMap>' +
+  '</RasterSymbolizer>';
+
+// Add the image to the map using both the color ramp and interval schemes.
+Map.addLayer(dNBR.sldStyle(sld_intervals), {}, 'dNBR classified');
 ```
 </details>
 
