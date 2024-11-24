@@ -357,7 +357,7 @@ Aquí se pueden observar como en las imágenes de Sentinel-1 las partes quemadas
 Aquí se observan las imágenes de antes y después del incendio, pero de Sentinel-2 en el cual las partes quemadas igualmente se ven más oscuras y las que no se vieron afectadas más claras. Sin embargo, una diferencia que se puede notar en estas imágenes es que existen mayores tonalidades, ósea más tonos desde blanco hasta negro, creando diferentes grises y a su vez distinguiendo mayores zonas, ya que demuestra más tipos de zonas, desde las más afectadas hasta zonas no afectadas viéndose zonas poco afectadas y así sucesivamente. 
 
 
-![Esta imagen demuestra el resultado del Sentinel-1 combinado del incendio.](https://github.com/Naye1213/lab4/blob/119cf3957b32a204d4dec432f0c13f8b72415003/Antes.%20S2.png)
+![Esta imagen demuestra el resultado del Sentinel-1 combinado del incendio.](https://github.com/Naye1213/lab4/blob/b0e4c57630c9a30460979c076b94f40d44a31e86/Juntas.%20S1.png)
 Esta imagen demuestra el resultado del Sentinel-1 combinado del incendio.
 
 
