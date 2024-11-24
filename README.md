@@ -25,7 +25,7 @@ Enlace de código de inundaciones Sentinel-1:
 https://code.earthengine.google.com/ccf23585a08601b9e93c2cd7136bc769 
 
 
-![Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.]([ruta_de_la_imagen](https://github.com/Naye1213/lab4/blob/9698b8f58d6838287f26f3a522e474824e6bc1e0/Antes.png))
+![Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.](https://github.com/Naye1213/lab4/blob/7f14cd651060b0b96adcfb18ee20cdc49ff5a369/Antes.png)
  
 
 
