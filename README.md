@@ -29,6 +29,7 @@ https://code.earthengine.google.com/ccf23585a08601b9e93c2cd7136bc769
  Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.
 
 
+
 ![Esta imagen es después de la inundación.](https://github.com/Naye1213/lab4/blob/e705bab55c0d905edaccc4b12945fec97297aacc/Despues.png)
 Esta imagen es después de la inundación.
 
