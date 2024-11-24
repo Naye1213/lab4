@@ -11,9 +11,9 @@ Entonces lo que como tal devuelve una imagen SAR es un mapa con áreas iluminada
 
 ## Marco Teórico
 
-Sentinel-1: es un satélite con instrumentos de antenas de radar que ayuda a estudiar tanto la superficie terrestre como la oceánica y gracias a los datos radar este satélite no se ve afectado por el día o por la noche, por lo que tiene una monitorización constante. (Copernicus, 2017)
+**Sentinel-1:** es un satélite con instrumentos de antenas de radar que ayuda a estudiar tanto la superficie terrestre como la oceánica y gracias a los datos radar este satélite no se ve afectado por el día o por la noche, por lo que tiene una monitorización constante. (Copernicus, 2017)
 
-Sentinel-2: es un satélite con instrumento Multi Spectral Intrument el cual toma datos de alta resolución espacial para monitorizar la superficie terrestre. Además, cuenta con 13 bandas con diferentes resoluciones espectrales. (Copernicus, 2017)
+**Sentinel-2:** es un satélite con instrumento Multi Spectral Intrument el cual toma datos de alta resolución espacial para monitorizar la superficie terrestre. Además, cuenta con 13 bandas con diferentes resoluciones espectrales. (Copernicus, 2017)
 
 NBR: es un índice de vegetación que se usa para calcular o identificar áreas calcinadas, por lo tanto, la vegetación saludable tiene alta reflectancia en el NIR, y el área quemada alta reflectancia en el SWIR. Este índice se suele utilizar para estudiar incendios. (Alonso, sf)
 
