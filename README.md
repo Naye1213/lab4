@@ -314,10 +314,15 @@ Map.addLayer(dNBR.sldStyle(sld_intervals), {}, 'dNBR classified');
 ## Referencias
 
 ESA. (s.f) “Radar de apertura sintética (SAR)” Recuperado de: https://www.esa.int/SPECIALS/Eduspace_Global_ES/SEMVKXF64RH_0.html 
+
 Guimeno, N. (2019) “¿Qué es un SAR?” Recuperado de: https://www.inta.es/INTA/es/blogs/ceit/BlogEntry_1554121012176 
+
 Menezes, E. (sf) “Explorar imágenes satelitales SAR” Recuperado de: https://learn.arcgis.com/es/projects/explore-sar-satellite-imagery/ 
+
 Copernicus (2017) “Sentinel-1, -2 y -3” Recuperado de: https://www.inta.es/INTA/gl/blogs/copernicus/BlogEntry_1507278650016 
+
 Alonso. (s.f) “Los 6 Índices de Vegetación para completar el NDVI” Recuperado de: https://mappinggis.com/2020/07/los-6-indices-de-vegetacion-para-completar-el-ndvi/ 
+
 Github. (s.f) “Acerca de GitHub y Git” Recuperado de: https://docs.github.com/es/get-started/start-your-journey/about-github-and-git 
 
 
