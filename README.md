@@ -28,11 +28,13 @@ https://code.earthengine.google.com/ccf23585a08601b9e93c2cd7136bc769
 
 
 ![Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.](https://github.com/Naye1213/lab4/blob/7f14cd651060b0b96adcfb18ee20cdc49ff5a369/Antes.png)
- Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.
+
+Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.
 
 
 
 ![Esta imagen es después de la inundación.](https://github.com/Naye1213/lab4/blob/e705bab55c0d905edaccc4b12945fec97297aacc/Despues.png)
+
 Esta imagen es después de la inundación.
 
 En estas dos imágenes se puede detectar leves cambios en toda la parte izquierda, la cual se ve más plana, mostrando a su vez más reflectancia y dando a entender que ahí hubo un cambio en cierto momento por lo que se podría decir que probablemente el lugar sufrió alguna afección de inundación afectando gran parte del espacio en estudio para este caso. Por el contrario, la parte derecha, que muestra zonas altas con mucha rugosidad, no se notan cambio alguno, por lo que se puede decir que esta parte no tuve afecciones de inundación, por lo que se mantuvo prácticamente igual.
@@ -336,32 +338,38 @@ https://code.earthengine.google.com/e8baf14ecdeed9da6ab7cf49c3e7cc1d
 
 
 ![Esta imagen demuestra el resultado del Sentinel-1 antes del incendio.](https://github.com/Naye1213/lab4/blob/99e6711c91709566654e69bf6380e843c00e69d7/Antes.%20S1.png)
- Esta imagen demuestra el resultado del Sentinel-1 antes del incendio.
+
+Esta imagen demuestra el resultado del Sentinel-1 antes del incendio.
 
 
 ![Esta imagen demuestra el resultado del Sentinel-1 despues del incendio.](https://github.com/Naye1213/lab4/blob/b36d400c7d42a304da9f225a5a060cb0c91b3510/Despues.%20S1.png)
- Esta imagen demuestra el resultado del Sentinel-1 despues del incendio.
+
+Esta imagen demuestra el resultado del Sentinel-1 despues del incendio.
 
 
 Aquí se pueden observar como en las imágenes de Sentinel-1 las partes quemadas se ven más oscuras, mientras que las zonas que no están quemadas mantienen su tono de gris siendo más claro. 
 
 
 ![Esta imagen demuestra el resultado del Sentinel-2 antes del incendio.](https://github.com/Naye1213/lab4/blob/119cf3957b32a204d4dec432f0c13f8b72415003/Antes.%20S2.png)
- Esta imagen demuestra el resultado del Sentinel-2 antes del incendio.
+
+Esta imagen demuestra el resultado del Sentinel-2 antes del incendio.
 
 
 ![Esta imagen demuestra el resultado del Sentinel-2 despues del incendio.](https://github.com/Naye1213/lab4/blob/3fed7156c8bfb6c21152585a61fe8eb029a239d0/Despues.%20S2.png)
- Esta imagen demuestra el resultado del Sentinel-2 despues del incendio.
+
+Esta imagen demuestra el resultado del Sentinel-2 despues del incendio.
 
 
 Aquí se observan las imágenes de antes y después del incendio, pero de Sentinel-2 en el cual las partes quemadas igualmente se ven más oscuras y las que no se vieron afectadas más claras. Sin embargo, una diferencia que se puede notar en estas imágenes es que existen mayores tonalidades, ósea más tonos desde blanco hasta negro, creando diferentes grises y a su vez distinguiendo mayores zonas, ya que demuestra más tipos de zonas, desde las más afectadas hasta zonas no afectadas viéndose zonas poco afectadas y así sucesivamente. 
 
 
 ![Esta imagen demuestra el resultado del Sentinel-1 combinado del incendio.](https://github.com/Naye1213/lab4/blob/b0e4c57630c9a30460979c076b94f40d44a31e86/Juntas.%20S1.png)
+
 Esta imagen demuestra el resultado del Sentinel-1 combinado del incendio.
 
 
 ![Esta imagen demuestra el resultado del Sentinel-2 combinado del incendio.](https://github.com/Naye1213/lab4/blob/6f9fdc09a0cc25237e1b9b72bc8cd5d88d0b2897/Juntas.%20S2.png)
+
 Esta imagen demuestra el resultado del Sentinel-2 combinado del incendio.
  
 
