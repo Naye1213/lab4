@@ -329,6 +329,14 @@ Map.addLayer(dNBR.sldStyle(sld_intervals), {}, 'dNBR classified');
 ```
 </details>
 
+### Analisis de resultados de indendios de Sentinel-1 y Sentinel-2
+
+
+
+## Conclusiones
+
+
+
 ## Referencias
 
 ESA. (s.f) “Radar de apertura sintética (SAR)” Recuperado de: https://www.esa.int/SPECIALS/Eduspace_Global_ES/SEMVKXF64RH_0.html 
