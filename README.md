@@ -25,8 +25,8 @@ En SAR existen ciertos mecanismos de retrodispersión, siendo la retrodispersió
 
 ### Analisis de imagenes de inundación con Sentinel-1
 
-Enlace de código de inundaciones Sentinel-1: 
-https://code.earthengine.google.com/ccf23585a08601b9e93c2cd7136bc769 
+*Enlace de código de inundaciones Sentinel-1: 
+https://code.earthengine.google.com/ccf23585a08601b9e93c2cd7136bc769*
 
 
 ![Esta imagen demuestra el resultado del Sentinel-1 antes de la inundación.](https://github.com/Naye1213/lab4/blob/7f14cd651060b0b96adcfb18ee20cdc49ff5a369/Antes.png)
@@ -335,8 +335,8 @@ Map.addLayer(dNBR.sldStyle(sld_intervals), {}, 'dNBR classified');
 
 ### Analisis de resultados de indendios de Sentinel-1 y Sentinel-2
 
-Enlace de código de incendios de Sentinel-1 y de Sentinel-2: 
-https://code.earthengine.google.com/e8baf14ecdeed9da6ab7cf49c3e7cc1d 
+*Enlace de código de incendios de Sentinel-1 y de Sentinel-2: 
+https://code.earthengine.google.com/e8baf14ecdeed9da6ab7cf49c3e7cc1d*
 
 
 ![Esta imagen demuestra el resultado del Sentinel-1 antes del incendio.](https://github.com/Naye1213/lab4/blob/99e6711c91709566654e69bf6380e843c00e69d7/Antes.%20S1.png)
